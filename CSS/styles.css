@@ -1,0 +1,132 @@
+/* Variáveis CSS para temas */
+:root {
+  /* Tema claro (padrão) */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --card-bg: #fff;
+  --header-bg: #fff;
+  --footer-bg: #2c3e50;
+  --footer-text: #ecf0f1;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --font-size-base: 16px;
+}
+
+/* Tema escuro */
+.dark-theme {
+  --primary-color: #375a7f;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #222;
+  --text-color: #ecf0f1;
+  --card-bg: #2c3e50;
+  --header-bg: #1a1a1a;
+  --footer-bg: #1a1a1a;
+  --footer-text: #ecf0f1;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Fonte aumentada */
+.large-font {
+  --font-size-base: 20px;
+}
+
+.container-pai {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.accessibilidade-controle {
+  display: flex;
+  gap: 10px;
+}
+
+.accessibilidade-controle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.accessibilidade-controle button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Menu de navegação */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+menu-navegacao {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.menu li a.active {
+    color: var(--accent-color);
+}
+
+.menu li a:hover {
+  color: var(--accent-color);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  min-width: 200px;
+  display: none;
+  list-style: none;
+  z-index: 1000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
