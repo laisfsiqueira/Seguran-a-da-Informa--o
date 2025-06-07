@@ -32,7 +32,6 @@ header {
 
 
 /* Formulario */
-
 .form-container {
   color: #8acff7;
   display: flex;
@@ -82,8 +81,10 @@ button:hover {
   background-color: #07013b;
 }
 
-/* Footer = Rodapé */
 
+
+
+/* Footer = Rodapé */
 .container-footer {
   font-family: "Helvetica", sans-serif;
   display: flex;
