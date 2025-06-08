@@ -1,0 +1,434 @@
+/* Main CSS file for the website */
+
+* {               /*evita que a margem e o padding sejam aplicados em todos os elementos*/
+  margin: 0;      /* remove a margem padrão */
+  padding: 0;     /* remove o padding padrão */
+  box-sizing: border-box;     /* garante que o padding e a borda sejam incluídos no tamanho total do elemento */
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 0% 0;
+}
+
+header h1 {
+  text-align: center;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  font-size: xxx-large;
+  font-weight: bold;
+  margin: 0;
+  padding: 0% 0;
+  line-height: 1.6;
+  position: center;
+}
+
+.text{
+  color: thistle;
+}
+
+/* Menu */
+a { 
+  padding-left: 20px;
+  padding-right: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  line-height: 4.5;
+}
+
+a:hover {
+  color: #cd9de0;
+}
+
+h6 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;  
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #f7fafc;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Seção Hero */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Container da equipe */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* Cards dos membros da equipe */
+.team-member {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team-member:hover::before {
+  transform: scaleX(1);
+}
+
+/* Foto do membro */
+.photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #f7fafc;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+}
+
+/* Placeholder para fotos vazias */
+.photo:empty::after {
+  content: '👤';
+  font-size: 60px;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Nome do membro */
+.team-member h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2d3748;
+  position: relative;
+}
+
+.team-member h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 1px;
+}
+
+/* Cargo/Título */
+.team-member p:first-of-type {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.team-member p:first-of-type strong {
+  font-weight: 600;
+}
+
+/* Descrição */
+.team-member p:last-of-type {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Links sociais */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.social-links a:hover::before {
+  opacity: 1;
+}
+
+.social-links a i {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ícones Font Awesome fallback */
+.social-links a[title="LinkedIn"]::after {
+  content: 'in';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.social-links a[title="Instagram"]::after {
+  content: '📷';
+  font-size: 16px;
+}
+
+.social-links a[title="GitHub"]::after {
+  content: '⚡';
+  font-size: 16px;
+}
+
+/* Esconder ícones Font Awesome se não carregarem */
+.social-links a i:empty + a::after {
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+  
+  .team-member {
+    padding: 30px 25px;
+  }
+  
+  .photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .team-container {
+    padding: 40px 15px;
+  }
+  
+  .team-member {
+    padding: 25px 20px;
+  }
+  
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.4rem;
+  }
+  
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.team-member {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.team-member:nth-child(1) { animation-delay: 0.1s; }
+.team-member:nth-child(2) { animation-delay: 0.2s; }
+.team-member:nth-child(3) { animation-delay: 0.3s; }
+.team-member:nth-child(4) { animation-delay: 0.4s; }
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efeito especial para fotos */
+.photo {
+  position: relative;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.team-member:hover .photo::before {
+  transform: translateX(100%);
+}
+
+/* Footer = Rodapé */
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.15);
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding: 0px 0;
+  position: relative
+ }

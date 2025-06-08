@@ -1,0 +1,156 @@
+/* Main CSS file for the website */
+
+* {               /*evita que a margem e o padding sejam aplicados em todos os elementos*/
+  margin: 0;      /* remove a margem padrão */
+  padding: 0;     /* remove o padding padrão */
+  box-sizing: border-box;     /* garante que o padding e a borda sejam incluídos no tamanho total do elemento */
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 0% 0;
+}
+
+header h1 {
+  text-align: center;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  font-size: xxx-large;
+  font-weight: bold;
+  margin: 0;
+  padding: 0% 0;
+  line-height: 1.6;
+  position: center;
+}
+
+.text{
+  color: thistle;
+}
+
+/* Menu */
+a { 
+  padding-left: 20px;
+  padding-right: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "Sofia", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  line-height: 4.5;
+}
+
+a:hover {
+  color: #cd9de0;
+}
+
+h6 {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;  
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Estilo inicial para o site */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;            /* define a altura da linha para melhorar a legibilidade */
+  color: #2d3748;            /* cor do texto padrão */
+  background-color: #f7fafc; /* cor de fundo padrão */
+}
+
+/* Títulos */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1a202c;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a5568;
+}
+
+/* Cards de informação */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+/* Footer = Rodapé */
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.15);
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding: 0px 0;
+  position: relative
+ }
