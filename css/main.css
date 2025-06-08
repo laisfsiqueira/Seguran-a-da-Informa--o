@@ -16,35 +16,6 @@ header h1 {
   position: center;
 }
 
-/* Acessibilidade */
-.acessibilty-controlls {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.acessibilty-controlls {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: #3a0447;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  z-index: 1000;
-}
-.acessibilty-controlls button {
-  background-color: #cd9de0;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.acessibilty-controlls button:hover {
-  background-color: #17012c;
-}
-
 /* Menu */
 a { 
   padding-left: 20px;
@@ -79,90 +50,16 @@ h3{
   padding: 0;
 }
 
-/* Theme */
-.dark {
-  background-color: #1f2128;
-  color: white;
-}
-
-.white {
-  background-color: white;
-  color: black;
-}
-
-/* Body */
-body {
-  color: black; /* Cor do texto padrão */
-  background-color: blue; /* Cor de fundo do body */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  height: 100vh;
-}
-
-/* Formulario */
-.form-container {
-  color: #17012c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
-}
-
-label {
-  color: black;
-  font-weight: bold;
-  font-size: larger;
-}
-
-form {
-  margin-top: 40px;
-  max-width: 400px;
-  padding: 20px;
-  color: white; /* Cor do texto padrão */
-  border-radius: 8px;
-  background-color: #cd9de0;
-  border: 1px solid #3d1818;
-}
-
-input, textarea {
-  margin: 10px;
-  color: #3d1818;
-  width: 95%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #3d1818;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #17012c;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  border: 1px solid #17012c;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #17012c;
-}
-
-
-
 /* Footer = Rodapé */
 
 .container-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #17012c;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.15);
   bottom: 0;
   width: 100%;
-  height: 50px;
-  position: fixed;  
-}
+  height: 20px;
+  padding: 0px 0;
+  position: relative
+ }
