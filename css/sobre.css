@@ -464,13 +464,15 @@ html {
 
 /* Footer = Rodapé */
 .container-footer {
+  box-shadow: #4b1396 0px 0px 10px 0px; /* sombra do rodapé */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* gradiente de fundo do rodapé */
+  color: white; /* cor do texto do rodapé */
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgba(0, 0, 0, 0.15);
+  justify-content: center; /* centraliza o conteúdo do rodapé */
   bottom: 0;
   width: 100%;
-  height: 20px;
+  height: 80px;
   padding: 0px 0;
-  position: relative
+  position: relative;
  }
