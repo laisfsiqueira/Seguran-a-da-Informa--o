@@ -12,6 +12,10 @@ header {
   padding: 0% 0;
 }
 
+.container-pai {
+  height: auto;
+}
+
 header h1 {
   text-align: center;
   text-decoration-color: white;
@@ -25,9 +29,7 @@ header h1 {
   position: center;
 }
 
-.text{
-  color: thistle;
-}
+/* color: #2d3748;  color: thistle; */
 
 /* Menu */
 a { 
@@ -59,6 +61,46 @@ h6 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/* Estilo inicial para o site */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;            /* define a altura da linha para melhorar a legibilidade */
+  color: #2d3748;            /* cor do texto padrão */
+  background-color: #f7fafc; /* cor de fundo padrão */
+}
+
+/* Títulos */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #1a202c;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+/* subtitulo */
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #4b1396;
+  text-align: center;
 }
 
 /* Formulario */

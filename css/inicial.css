@@ -7,31 +7,31 @@
 }
 
 header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
-  padding: 0% 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* gradiente de fundo do cabeçalho */
+  /* cor do texto do cabeçalho */
+  color: #fff; /* cor branca para o texto */
+  padding: 0% 0; /* padding do cabeçalho */
 }
 
+/* Container principal */
 .container-pai {
-  height: auto;
+  height: auto; /* altura automática para o container principal */
 }
 
+/* Título do cabeçalho */
 header h1 {
-  text-align: center;
-  text-decoration-color: white;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
-  font-size: xxx-large;
-  font-weight: bold;
-  margin: 0;
-  padding: 0% 0;
-  line-height: 1.6;
-  position: center;
+  text-align: center; /* centraliza o texto do título */
+  text-decoration-color: white; /* cor da decoração do texto */
+  text-decoration-style: solid; /* estilo da decoração do texto */
+  text-decoration-thickness: 2px; /* espessura da decoração do texto */
+  font-size: xxx-large; /* tamanho da fonte do título */
+  font-weight: bold; /* negrito do título */
+  margin: 0; /* margem do título */
+  padding: 0% 0; /* padding do título */ 
+  position: center; /* posição do título */
 }
 
-.text{
-  color: thistle;
-}
+/* color: #2d3748;  color: thistle; */
 
 /* Menu */
 a { 
@@ -80,7 +80,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
-  color: #1a202c;
+  color: #8b49e2;
   position: relative;
 }
 
@@ -96,11 +96,13 @@ h2::after {
   border-radius: 2px;
 }
 
+/* Subtítulo */
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #2d3748;
+  color: #4b1396;
+  text-align: center;
 }
 
 /* Parágrafos */
